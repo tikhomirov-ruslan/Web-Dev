@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<!-- The HTML <picture> Element -->
+    <picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+<!-- When to use the Picture Element -->
+
+<!-- 1. Bandwidth -->
+<!-- If you have a small screen or device, it is not necessary to load a large image file. 
+ The browser will use the first <source> element with matching attribute values, 
+ and ignore any of the following elements.
+  -->
+
+  <!-- 2. Format Support -->
+   <!-- Some browsers or devices may not support all image formats. 
+    By using the <picture> element, you can add images of all formats, 
+        and the browser will use the first format it recognizes, 
+        and ignore any of the following elements. -->
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+
+</body>
+</html>

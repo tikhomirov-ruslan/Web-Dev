@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    <!-- Image Maps -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<!-- The Image -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<!-- Create Image Map -->
+ <map name="workmap"></map>
+
+ <!-- The Areas
+  Shape
+    rect - defines a rectangular region
+    circle - defines a circular region
+    poly - defines a polygonal region
+    default - defines the entire region -->
+
+    <!-- Shape="rect" -->
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+<!-- Shape="circle" -->
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+<!-- Shape="poly" -->
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+<!-- Image Map and JavaScript -->
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+
+</body>
+</html>
