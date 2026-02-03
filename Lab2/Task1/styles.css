@@ -1,0 +1,136 @@
+body {
+        background-color: #fff;
+        
+    }
+
+    .main {
+        height: 496px;
+        width: auto;
+        margin: 0 40px;
+    }
+
+    .left {
+        float: left;
+        margin-top: 15%;
+        margin-left: 15%;
+        font-size: 20px;
+        /* font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif; */
+    }
+
+    .right {
+       float: right;
+       margin-top: 7%;
+       margin-right: 15%;
+    }
+
+    .logo {
+        height: 105px;
+        margin: -30px;
+        /* font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif; */
+    }
+
+    p {
+        width: auto;
+        font-size: 27px;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    }
+
+    .logb {
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 332px;
+        padding: 0 16px;
+        line-height: 48px;
+        font-size: 20px;
+        margin-top: 16px;
+        font-weight: bold;
+    }
+
+    .forget {
+        margin-top: 16px;
+    }
+
+    .createNew {
+        background-color: rgb(42, 187, 42);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        width: 225px;
+        padding: 0 16px;
+        line-height: 48px;
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: bold;
+    }
+
+
+    .login {
+        background-color: white;
+        border-radius: 10px;
+        margin: 40px 0 0;
+        padding: 20px 0 28px;
+        width: 400px;
+        text-align: center;
+
+        padding-bottom: 24px;
+        padding-top: 10px;
+    }
+
+    #email, #pass {
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 14px 16px;
+        width: 330px;
+        
+        
+    }
+
+    .email, .password {
+        padding: 6px 0;
+        width: 302px;
+        margin-left: 5%;
+    }
+
+    .description {
+        margin-top: 16px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    }
+
+    .link {
+        font-weight: bold;
+        color: black;
+    }
+
+    footer{
+        margin-top: 150px;
+        /* text-align: center; */
+    }
+
+    .languages {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    .others {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: #737373;
+        font-size: small;
+    }

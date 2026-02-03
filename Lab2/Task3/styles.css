@@ -1,0 +1,214 @@
+    ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: black;
+        font-size: medium;
+    }
+
+    .header-links {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    sup {
+        font-size: 20px;
+        color: gray;
+        font-weight: normal;
+    }
+
+    sub {
+        font-size: 25px;
+        color: black;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: black;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .Start_free_for_30_days {
+        /* margin-top: 20px; */
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 30px;
+        margin-bottom: 50px;
+    }
+
+    .Start_a_free_trial {
+         /* margin-top: 20px; */
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 30px;
+    }
+
+    .Continue_with_Team {
+        /* margin-top: 20px; */
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 100px;
+    }
+
+    .Create_a_free_organization {
+        /* margin-top: 20px; */
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 80px;
+    }
+
+    .Contact_Sales {
+        /* margin-top: 20px; */
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 24px;
+    }
+
+    .Free, .Team, .Enterprise {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 400px;
+        /* height: 871px; */
+        background-color: rgb(245, 245, 245)
+        
+    }
+
+    .cards_header {
+        background-color: white;
+
+        padding-bottom: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .cards_body {
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    h3 {
+        padding: 0 20px;
+        color: blue;
+        text-transform: uppercase;
+    }
+
+    ul li {
+        padding: 5px 0 0 0;
+    }
+
+
+    summary {
+        font-size: 15px;
+        font-weight: bold;
+        /* padding: 10px; */
+    }
+
+    .little_cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* padding: 10px; */
+        justify-content: center;
+        gap: 30px;
+
+    .GitHub_Copilot {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
+
+    .GitHub_Models {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
+
+    .GitHub_Advanced_Security {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
+
+    .GitHub_Codespaces {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
+
+    .Premium_support {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
+
+    .Git_Large_File_Storage {
+        border: 1px solid lightgray;    
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        background-color: white;
+        text-align: left;
+    }
