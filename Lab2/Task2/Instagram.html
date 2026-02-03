@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        
+    }
+
+    p {
+        /* width: auto; */
+        font-size: 40px;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        /* margin-right: 15px; */
+        /* margin-bottom: 10px; */
+        float: left;
+    }
+
+    /* .main {
+        height: 496px;
+        width: auto;
+        margin: 0 40px;
+    } */
+
+    .left {
+        float: left;
+        margin-top: 5%;
+        margin-left: 3%;
+        /* font-size: 20px; */
+        text-align: center;
+    }
+
+    .right {
+       float: right;
+       margin-top: 7%;
+       margin-right: 15%;
+
+        flex: 1;
+        border-left: 1px solid #ccc; /* линия справа */
+        padding: 20px;
+    }
+
+    .logb {
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        width: 550px;
+        padding: 0 16px;
+        line-height: 40px;
+        font-size: 20px;
+        margin-top: 16px;
+        font-weight: bold;
+    }
+
+    .forget {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        width: 550px;
+        padding: 0 16px;
+        line-height: 40px;
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: bold;
+    }
+
+    .createNew {
+        background-color: white;
+        color: rgb(59, 89, 152);;
+        
+        border-radius: 30px;
+        width: 550px;
+        padding: 0 16px;
+        line-height: 40px;
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: bold;
+        border-color: rgb(59, 89, 152);
+    }
+
+    .facebook {
+        background-color: white;
+        color: black;
+        
+        border-radius: 30px;
+        width: 550px;
+        padding: 0 16px;
+        line-height: 40px;
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: bold;
+        border-color: rgb(59, 89, 152);
+    }
+
+
+    .login {
+        background-color: white;
+        border-radius: 10px;
+        margin: 40px 0 0;
+        padding: 20px 0 28px;
+        width: 400px;
+        text-align: center;
+
+        padding-bottom: 24px;
+        padding-top: 10px;
+    }
+
+    
+
+    #email, #pass {
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 14px 16px;
+        width: 510px;
+        
+        
+    }
+
+    .email, .password {
+        padding: 6px 0;
+        /* margin-left: 5%; */
+    }
+
+    .rainbow {
+        background-image: linear-gradient(to right, #ff5c00, #ff0069, #d300c5);
+        -webkit-text-fill-color: transparent; /* - прозрачность */
+        -webkit-background-clip: text; /* наложения фоновых градиентов на текст. */
+    }
+
+    footer{
+        margin-top: 55%;
+        /* text-align: center; */
+    }
+
+    .languages {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    .others {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: #737373;
+        font-size: small;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="main">
+    <div class="left">
+        <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-logo-icon-svg-download-png-1646407.png" alt="Instagram">
+
+        <p>
+            <br>
+        Посмотрите, какими моментами из 
+        <br> жизни поделились ваши <span class="rainbow">близкие <br>
+        друзья</span>.
+        </p>
+
+        <img class="image" src="https://static.cdninstagram.com/rsrc.php/v4/yF/r/reN9rvYdLTB.png" alt="Image" width="450px" height="400px">
+
+
+    </div>
+
+    <hr class="hr-vertical">
+
+    <div class="right">
+        <div class="login">
+            <h2>Войти в Instagram</h2>
+            <div class="email">
+                <input type="text" 
+                    class="input" 
+                    name="email" 
+                    id="email"  
+                    placeholder="Имя пользователя, номер мобильного телефона или электронный адрес" 
+                    autofocus="1"  
+                    aria-label="Имя пользователя, номер мобильного телефона или электронный адрес">
+            </div>
+
+            <div class="password">
+                <input type="password" 
+                class="input" 
+                name="pass" 
+                id="pass"  
+                placeholder="Пароль" 
+                aria-label="Пароль">
+            </div>
+
+            <button class="logb">Вход</button>
+
+            <button class="forget">Забыли пароль?</button>
+
+            <button class="facebook">Войти через Facebook</button>
+
+            <button class="createNew">Создать новый аккаунт</button>
+
+            <h3>Meta</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+<!-- <ul class="languages" data-nocookies="1">
+    <li>Русский</li>
+    <li>Қазақша</li>
+    <li>English (US)</li>
+    <li>Türkçe</li>
+    <li>Bahasa Indonesia</li>
+    <li>中文(简体)</li>
+    <li>Deutsch</li>
+    <li>한국어</li>
+    <li>Shqip</li>
+    <li>Español</li>
+    <li>Português (Brasil)</li>
+</ul> -->
+
+    <hr>
+
+<ul class="others" data-nocookies="1">
+    <li>Meta</li>
+    <li>Информация</li>
+    <li>Блог</li>
+    <li>Вакансии</li>
+    <li>Помощь</li>
+    <li>API</li>
+    <li>Конфиденциальность</li>
+    <li>Условия</li>
+    <li>Места</li>
+    <li>Instagram Lite</li>
+    <li>Meta AI</li>
+    <li>Threads</li>
+    <li>Загрузка контактов и лица, не являющиеся пользователями</li>
+    <li>Meta Verified</li>
+    <li>Русский</li>
+    <li>© 2026 Instagram from Meta</li>
+    
+</ul>
+
+
+
+</footer>
+
+</html>
