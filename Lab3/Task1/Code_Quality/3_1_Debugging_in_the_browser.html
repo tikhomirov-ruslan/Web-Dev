@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+    // The command “debugger”
+    function hello(name) {
+        let phrase = `Hello, ${name}!`;
+        debugger;  // <-- the debugger stops here
+        say(phrase);
+    }
+
+
+
+    // Pause and look around
+    // 1. Watch – shows current values for any expressions.
+    // 2. Call Stack – shows the nested calls chain.
+    // 3. Scope – current variables.
+
+
+
+    // Tracing the execution
+    // |> – “Resume”: continue the execution, hotkey F8.
+    //->. – “Step”: run the next command, hotkey F9.
+    // >.> – “Step over”: run the next command, but don’t go into a function, hotkey F10.
+    //  – “Step into”, hotkey F11.
+    //^.^ – “Step out”: continue the execution till the end of the current function, hotkey Shift+F11.
+    // -/>  – enable/disable all breakpoints.
+    // <||> – enable/disable automatic pause in case of an error.
+
+
+
+    // Logging
+    // open console to see
+    for (let i = 0; i < 5; i++) {
+        console.log("value,", i);
+    }
+  </script>
+
+</body>
+
+</html>
