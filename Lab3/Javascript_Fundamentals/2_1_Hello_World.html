@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+
+  <!-- The “script” tag -->
+  <script>
+    alert( 'Hello, world!' );
+  </script>
+
+  <p>...After the script.</p>
+
+  <!-- External scripts -->
+  <script src="/path/to/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+  <script src="/js/script1.js"></script>
+  <script src="/js/script2.js"></script>
+
+  <!-- If src is set, the script content is ignored. -->
+  <script src="file.js">
+    alert(1); // the content is ignored, because src is set
+  </script>
+
+  <script src="file.js"></script>
+<script>
+  alert(1);
+</script>
+
+</body>
+
+</html>
