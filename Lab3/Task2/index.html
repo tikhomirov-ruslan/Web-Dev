@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="scriptsheet" href="script.js"> -->
+
+<header>
+    <h2>ToDo List</h2>
+</header>
+
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <section class="task-form-section">
+        <form id="taskForm" class="task-form">
+            <input 
+                type="text" 
+                id="taskInput" 
+                class="form-control" 
+                placeholder="New Task"
+            >
+            <button id="addTaskBtn" class="Add">Add</button>
+        </form>
+    </section>
+
+    <section class="task-list-section">
+        <div class="task-list-container">
+            <ul id="taskList">
+                <li class="empty-list">
+                    <i>📝</i>
+                    <p>No tasks yet. Add a task to get started!</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
