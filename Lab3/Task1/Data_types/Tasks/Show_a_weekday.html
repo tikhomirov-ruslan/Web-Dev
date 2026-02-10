@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <!-- Write a function getWeekDay(date) to show the weekday in short format: ‘MO’, ‘TU’, ‘WE’, ‘TH’, ‘FR’, ‘SA’, ‘SU’. -->
+
+  <script>
+    let date = new Date(2012, 0, 3);  // 3 Jan 2012
+    alert( getWeekDay(date) );        // should output "TU"
+
+
+
+    function getWeekDay(date) {
+        let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+        return days[date.getDay()];
+    }
+    let date = new Date(2014, 0, 3); // 3 Jan 2014
+    alert( getWeekDay(date) ); // FR
+  </script>
+
+</body>
+
+</html>

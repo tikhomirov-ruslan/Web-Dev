@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+    // Map
+    // Set
+    // Array
+
+
+
+    // Object.keys, values, entries
+    // For plain objects, the following methods are available:
+    // Object.keys(obj) – returns an array of keys.
+    // Object.values(obj) – returns an array of values.
+    // Object.entries(obj) – returns an array of [key, value] pairs.
+    let user = {
+        name: "John",
+        age: 30
+    };
+
+
+    let user = {
+        name: "John",
+        age: 30
+    };
+    // loop over values
+    for (let value of Object.values(user)) {
+        alert(value); // John, then 30
+    }
+
+
+
+    // Transforming objects
+    let prices = {
+        banana: 1,
+        orange: 2,
+        meat: 4,
+    };
+    let doublePrices = Object.fromEntries(
+        // convert prices to array, map each key/value pair into another pair
+        // and then fromEntries gives back the object
+        Object.entries(prices).map(entry => [entry[0], entry[1] * 2])
+    );
+    alert(doublePrices.meat); // 8
+  </script>
+
+</body>
+
+</html>
