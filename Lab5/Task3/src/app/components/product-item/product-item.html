@@ -1,0 +1,12 @@
+<div class="card">
+  <img [src]="product().images[currentImageIndex()]" class="main-img">
+  <h2>{{ product().name }}</h2>
+  <p>⭐ {{ product().rating }} | ❤️ {{ product().likes }}</p>
+
+  <div class="btns">
+    <button (click)="like()" class="like">Like</button>
+    <button (click)="share('wa')" class="wa">WhatsApp</button>
+    <button (click)="share('tg')" class="tg">Telegram</button>
+    <button (click)="onDelete()" class="delete">Delete</button>
+  </div>
+</div>

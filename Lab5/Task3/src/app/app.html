@@ -1,0 +1,17 @@
+<nav>
+  @for (cat of categories; track cat.id) {
+    <button (click)="selectCategory(cat.id)" 
+            [class.active]="selectedCategoryId() === cat.id">
+      {{ cat.name }}
+    </button>
+  }
+</nav>
+
+@if (selectedCategoryId()) {
+  <app-product-list 
+    [products]="filteredProducts()" 
+    (removeProduct)="handleDelete($event)" />
+} @else {
+  <p>Выберите категорию сверху.</p>
+}
+
