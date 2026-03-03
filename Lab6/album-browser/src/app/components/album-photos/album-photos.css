@@ -1,0 +1,75 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Магия CSS Grid */
+.photo-grid {
+  display: grid;
+  /* Создает колонки шириной минимум 150px, которые заполняют всё пространство */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.photo-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-wrapper {
+  position: relative;
+  height: 150px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Эффект при наведении на картинку */
+.photo-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.img-wrapper:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-title {
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  /* Ограничиваем текст двумя строками */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

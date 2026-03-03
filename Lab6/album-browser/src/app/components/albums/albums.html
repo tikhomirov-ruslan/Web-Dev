@@ -1,0 +1,17 @@
+<p>albums works!</p>
+
+<h2>All Albums</h2>
+
+@if (loading) {
+  <div class="spinner">Loading albums...</div>
+} @else {
+  <ul class="album-list">
+    @for (album of albums; track album.id) {
+      <li class="album-item" [routerLink]="['/albums', album.id]">
+        <span class="album-id">#{{ album.id }}</span>
+        <span class="album-title">{{ album.title }}</span>
+        <button class="btn-delete" (click)="delete(album.id, $event)">🗑️</button>
+      </li>
+    }
+  </ul>
+}

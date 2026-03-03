@@ -1,0 +1,20 @@
+<p>album-detail works!</p>
+
+@if (album) {
+  <div class="detail-card">
+    <h3>Album Details</h3>
+    <p><strong>ID:</strong> {{ album.id }}</p>
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+    
+    <div class="edit-section">
+      <label>Title:</label>
+      <input [(ngModel)]="tempTitle" class="edit-input">
+    </div>
+
+    <div class="actions">
+      <button (click)="save()" class="btn-save">Save changes</button>
+      <button [routerLink]="['/albums', album.id, 'photos']" class="btn-view">View Photos</button>
+      <button (click)="goBack()" class="btn-back">Back to list</button>
+    </div>
+  </div>
+}

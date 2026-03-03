@@ -1,0 +1,24 @@
+<p>album-photos works!</p>
+
+<div class="header-actions">
+  <button (click)="back()" class="btn-back">← Back to Album</button>
+  <h2>Photos in Album #{{albumId}}</h2>
+</div>
+
+@if (loading) {
+  <div class="loader">Loading photos...</div>
+}
+
+<div class="photo-grid">
+  @for (photo of photos; track photo.id) {
+    <div class="photo-card">
+      <div class="img-wrapper">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+        <div class="photo-overlay">
+          <span>ID: {{photo.id}}</span>
+        </div>
+      </div>
+      <p class="photo-title">{{ photo.title }}</p>
+    </div>
+  }
+</div>
